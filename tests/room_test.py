@@ -1,10 +1,10 @@
 import unittest
-
 from src.room import Room
 from src.guest import Guest
 from src.song import Song
 
 class TestRoom(unittest.TestCase):
+    
     def setUp(self):
         self.song_1 = Song("Mr. Brightside", "The Killers", "Rock")
         self.song_2 = Song("Juicy", "The Notorious B.I.G.", "Rap")
