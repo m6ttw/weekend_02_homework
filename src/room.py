@@ -11,8 +11,9 @@ class Room:
 
 
     def check_out_guest(self, guest):
-        if len(self.guests) >= 1:
-            self.guests.remove(guest)
+        for guest in self.guests:
+            if len(self.guests) >= 1:
+                self.guests.remove(guest)
 
 
     def guest_count(self):
