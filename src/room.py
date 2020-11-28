@@ -10,6 +10,11 @@ class Room:
         self.guests.append(guest)
 
 
+    def check_out_guest(self, guest):
+        if len(self.guests) >= 1:
+            self.guests.remove(guest)
+
+
     def guest_count(self):
         return len(self.guests) 
 
